@@ -1,16 +1,47 @@
-# React + Vite
+# CodeSense AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CodeSense AI is a lightweight, browser-based code review and UI/UX analysis tool built with React and Monaco Editor.
 
-Currently, two official plugins are available:
+The idea behind this project was to explore how far real-time code analysis can go on the frontend alone, without depending on a backend service. It uses a custom rule-based engine to analyze code as you type, highlighting accessibility issues, UI/UX inconsistencies, and outdated JavaScript patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-time Code Analysis**  
+  Evaluates code instantly and provides structured feedback with severity levels.
 
-## Expanding the ESLint configuration
+- **Live Scoring System**  
+  Generates dynamic scores across code quality, UI/UX, and accessibility.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Automatic Improvements**  
+  Suggests and applies fixes to produce a cleaner, improved version of the input code.
+
+- **Preview Sandbox**  
+  Safely renders HTML and Tailwind updates in an isolated environment.
+
+- **Editor Experience**  
+  Integrated Monaco Editor for a familiar, VS Code-like interface.
+
+- **Dark Mode Support**  
+  Built-in dark theme using Tailwind CSS.
+
+---
+
+## Tech Stack
+
+- **Frontend:** React 18 (Vite)
+- **Styling:** Tailwind CSS
+- **Editor:** Monaco Editor (`@monaco-editor/react`)
+- **Icons:** Lucide React
+- **Core Logic:** Custom rule-based analysis (regex-driven)
+
+---
+
+## Getting Started
+
+Make sure you have Node.js installed.
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YourUsername/codesense-ai.git
